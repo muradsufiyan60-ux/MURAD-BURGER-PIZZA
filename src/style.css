@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Global Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #FAF9F6;
+  color: #4A2511;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Color Theme Variables */
+:root {
+  --primary-orange: #FF8C32;
+  --primary-brown: #4A2511;
+  --bg-cream: #FFF8F0;
+}
