@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "homepage": "https://murad-sufiyan.github.io/barger-project",
+  "homepage": "https://muradsufiyan60-ux.github.io/MURAD-BURGER-PIZZA",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

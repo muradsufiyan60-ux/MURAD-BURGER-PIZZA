@@ -2,9 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/barger-project/', // Matches repository name for GitHub Pages
+  base: '/MURAD-BURGER-PIZZA/',
   plugins: [
     react(),
     tailwindcss(),
