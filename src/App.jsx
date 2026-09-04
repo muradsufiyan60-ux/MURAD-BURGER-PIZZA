@@ -23,7 +23,7 @@ export default function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <Router>
+        <Router basename="/barger-project">
           <div className="min-h-screen flex flex-col justify-between bg-[#FAF9F6]">
             <Navbar />
             <Routes>
