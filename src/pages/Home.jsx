@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import Hero from '../components/Hero';
 import FoodCard from '../components/FoodCard';
 import CategoryFilter from '../components/CategoryFilter';
-import AboutSection from '../components/AboutSection'; // 1. Import AboutSection
+import AboutSection from '../components/AboutSection';
 import ContactSection from '../components/ContactSection';
 import { menuData } from '../data/menuData';
 
@@ -16,6 +17,20 @@ export default function Home() {
 
   return (
     <main style={{ backgroundColor: '#FAF9F6', minHeight: '100vh', paddingBottom: '40px' }}>
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Murad Burger & Pizza | Delicious Fast Food Delivery</title>
+        <meta 
+          name="description" 
+          content="Order fresh, hot burgers, pizzas, sides, and drinks online from Murad Burger & Pizza. Fast delivery and the best local quality!" 
+        />
+        <meta property="og:title" content="Murad Burger & Pizza | Home" />
+        <meta 
+          property="og:description" 
+          content="Explore our popular picks including juicy burgers, cheesy pizzas, sides, and refreshing drinks." 
+        />
+      </Helmet>
+
       <Hero />
       
       <section style={{
@@ -51,7 +66,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. Place AboutSection right here */}
       <AboutSection />
 
       <ContactSection />
