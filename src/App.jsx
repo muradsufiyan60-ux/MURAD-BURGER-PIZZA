@@ -23,7 +23,7 @@ export default function App() {
   return (
     <AuthProvider>
       <CartProvider>
-        <Router basename="/MURAD-BURGER-PIZZA">
+        <Router >
           <div className="min-h-screen flex flex-col justify-between bg-[#FAF9F6]">
             <Navbar />
             <Routes>
